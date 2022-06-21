@@ -34,6 +34,19 @@ input[type="radio"] {
   margin-top: 5px;
 }
 
+.checkbox {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 25px;
+  position: relative;
+}
+
+.checkbox input {
+  position: absolute;
+  left: 0;
+  top: 1rem;
+}
+
 label {
   margin-left: 0;
   display: block;

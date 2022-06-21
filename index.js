@@ -24,33 +24,64 @@ document.querySelectorAll(".btn-answer").forEach((button) => {
       .classList.remove("hidden");
     let allAnswers = document.querySelectorAll(`.question-${currentRound + 1}`);
     allNextButtons[currentRound].classList.remove("hidden");
-    allAnswers.forEach((item) => {
-      if (item.dataset.solution === "correct") {
-        answered = true;
-        item.parentElement.parentElement.classList.add("correct-answer");
-        if (item.checked) {
-          correctAnswers++;
-          document
-            .querySelectorAll(".solution-box__correct")
-            [currentRound].classList.remove("hidden");
-        } else {
-          document
-            .querySelectorAll(".solution-box__wrong")
-            [currentRound].classList.remove("hidden");
-        }
-      } else {
-        item.parentElement.parentElement.classList.add("wrong-answer");
-      }
-    });
+    if (button.dataset.type === "radio") checkRadio(allAnswers);
+    if (button.dataset.type === "checkbox") checkBox(allAnswers);
   });
 });
+
+const checkRadio = (allAnswers) => {
+  allAnswers.forEach((item) => {
+    if (item.dataset.solution === "correct") {
+      answered = true;
+      item.parentElement.parentElement.classList.add("correct-answer");
+      if (item.checked) {
+        correctAnswers++;
+        document
+          .querySelectorAll(".solution-box__correct")
+          [currentRound].classList.remove("hidden");
+      } else {
+        document
+          .querySelectorAll(".solution-box__wrong")
+          [currentRound].classList.remove("hidden");
+      }
+    } else {
+      item.parentElement.parentElement.classList.add("wrong-answer");
+    }
+  });
+};
+
+const checkBox = (allAnswers) => {
+  let checkSol = true;
+  allAnswers.forEach((item) => {
+    if (item.dataset.solution === "correct") {
+      item.parentElement.parentElement.classList.add("correct-answer");
+      if (!item.checked) checkSol = false;
+    } else {
+      item.parentElement.parentElement.classList.add("wrong-answer");
+      if (item.checked) checkSol = false;
+    }
+  });
+  console.log(checkSol);
+  if (checkSol) {
+    correctAnswers++;
+    document
+      .querySelectorAll(".solution-box__correct")
+      [currentRound].classList.remove("hidden");
+  } else {
+    document
+      .querySelectorAll(".solution-box__wrong")
+      [currentRound].classList.remove("hidden");
+  }
+};
 
 const getNextSection = () => {
   allSections[currentRound].classList.add("hidden");
   currentRound++;
   answered = false;
-  currentRound === 3 ? (allNextButtons[3].innerHTML = "Zum Ergebnis") : "";
-  currentRound === 4
+  currentRound === totalRounds - 1
+    ? (allNextButtons[totalRounds - 1].innerHTML = "Zum Ergebnis")
+    : "";
+  currentRound === totalRounds
     ? showEndScreen()
     : allSections[currentRound].classList.remove("hidden");
 };
