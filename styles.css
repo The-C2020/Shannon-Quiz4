@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(221, 102, 34, 1) 0%,
+    rgba(255, 222, 0, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+hr {
+  width: 95%;
+}
+
+input[type="radio"] {
+  float: left;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+label {
+  margin-left: 0;
+  display: block;
+  padding: 1rem 0;
+}
+
+.container {
+  background-color: white;
+  width: 60%;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1rem;
+  border-top: 0.75rem solid #ff0000;
+  margin: 1rem;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-start-game {
+  font-size: 3rem;
+  padding: 0.5rem 1rem;
+}
+
+.btn-answer {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  margin-left: 2rem;
+  padding: 0.5rem 1.5rem;
+  float: left;
+}
+
+.btn-next {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  padding: 0.5rem 1.5rem;
+  float: right;
+  position: absolute;
+  right: 10px;
+}
+
+.btns {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.quiz-container {
+  padding: 0 0 1rem 0;
+}
+
+.quiz-container__question-number {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  padding-left: 2rem;
+  text-align: left;
+  background-color: orange;
+}
+
+.quiz-container__question,
+.quiz-container__question-options {
+  text-align: left;
+  padding-left: 2rem;
+  margin: 1rem auto;
+}
+
+.quiz-container__question-option:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.quiz-container__question-options {
+  margin: 1rem 1rem -1rem auto;
+}
+
+.solution-box {
+  display: block;
+  text-align: left;
+  font-size: 2rem;
+  padding-left: 2rem;
+  margin: 0rem auto;
+}
+
+.solution-box__correct {
+  color: green;
+}
+
+.solution-box__wrong {
+  color: red;
+}
+
+.feedback {
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+.result-container {
+  text-align: left;
+}
+
+.hidden {
+  display: none;
+}
+
+.correct-answer {
+  background-color: lightgreen;
+}
+
+.wrong-answer {
+  background-color: lightsalmon;
+}

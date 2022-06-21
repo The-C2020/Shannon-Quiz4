@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="index.js"></script>
+  </head>
+
+  <body>
+    <!-- <section class="container start-container">
+      <h1 class="title">YouTube - Quiz</h1>
+      <button class="btn btn-start-game">START</button>
+    </section> -->
+    <section class="container quiz-container">
+      <div class="quiz-container__question-number">
+        <strong>Frage 1:</strong>
+      </div>
+      <div class="quiz-container__question">
+        Was ist eine Creative Commons-Lizenz, auch CC abgekürzt?
+      </div>
+      <hr />
+      <div class="quiz-container__question-options">
+        <div class="quiz-container__question-option">
+          <label
+            ><input
+              class="question-1"
+              type="radio"
+              name="question1"
+              data-solution="wrong"
+            />Eine Erlaubnis um ehrenamtlich zu arbeiten</label
+          >
+        </div>
+        <div class="quiz-container__question-option">
+          <label
+            ><input
+              class="question-1"
+              type="radio"
+              name="question1"
+              data-solution="correct"
+            />
+            Eine Kennzeichnung, die zeigt, dass dieses Werk (z.B. ein Video oder
+            Musikstück) weiterverwendet werden darf.</label
+          >
+        </div>
+        <div class="quiz-container__question-option">
+          <label
+            ><input
+              class="question-1"
+              type="radio"
+              name="question1"
+              data-solution="wrong"
+            />Eine Genehmigung, die Künstler brauchen um ihre Arbeit zu
+            veröffentlichen</label
+          >
+        </div>
+      </div>
+      <div class="btns">
+        <button class="btn btn-answer">Beantworten</button>
+        <button class="btn btn-next hidden">Nächste Frage</button>
+      </div>
+
+      <div class="solution-box sol-box-1 hidden">
+        <div class="solution-box__correct hidden">
+          &#10004; Richtig! Sehr gut.
+        </div>
+        <div class="solution-box__wrong hidden">&#x2717; Leider Falsch!</div>
+        <h2>Feedback:</h2>
+        <div class="feedback">
+          Eine Creative Commons-Lizenz (Englisch für
+          schöpferisches-Gemeingut-Lizenz) ist eine Kennzeichnung für Werke
+          (z.B. ein Video oder Musikstück), die weiterverwendet werden dürfen.
+          Hierbei gibt es aber noch verschiedene Abstufungen.
+        </div>
+      </div>
+    </section>
+
+    <section class="container quiz-container hidden">
+      <div class="quiz-container__question-number">
+        <strong>Frage 2:</strong>
+      </div>
+      <div class="quiz-container__question">
+        Welches Gesetz regelt und verbietet die Nutzung von Werken (Video,
+        Bilder, Musik etc.)?
+      </div>
+      <hr />
+      <div class="quiz-container__question-options">
+        <div class="quiz-container__question-option">
+          <label
+            ><input
+              class="question-2"
+              type="radio"
+              name="question2"
+              data-solution="correct"
+            />Das "Gesetz über Urheberrecht und verwandte Schutzrechte" kurz
+            "UrhG"</label
+          >
+        </div>
+        <div class="quiz-container__question-option">
+          <label
+            ><input
+              class="question-2"
+              type="radio"
+              name="question2"
+              data-solution="wrong"
+            />Das "Strafgesetzbuch" kurz "StGB"</label
+          >
+        </div>
+        <div class="quiz-container__question-option">
+          <label
+            ><input
+              class="question-2"
+              type="radio"
+              name="question2"
+              data-solution="wrong"
+            />
+            Das "Handelsgesetzbuch" kurz "HGB"</label
+          >
+        </div>
+      </div>
+      <div class="btns">
+        <button class="btn btn-answer">Beantworten</button>
+        <button class="btn btn-next hidden">Nächste Frage</button>
+      </div>
+
+      <div class="solution-box sol-box-2 hidden">
+        <div class="solution-box__correct hidden">
+          &#10004; Richtig! Sehr gut.
+        </div>
+        <div class="solution-box__wrong hidden">&#x2717; Leider Falsch!</div>
+        <h2>Feedback:</h2>
+        <div class="feedback">
+          Im "Gesetz über Urheberrecht und verwandte Schutzrechte" (Kurz UrhG)
+          ist alles zum Thema Urheberrecht und Nutzung von Werken Anderer
+          geregelt.
+        </div>
+      </div>
+    </section>
+
+    <section class="container quiz-container hidden">
+      <div class="quiz-container__question-number">
+        <strong>Frage 3:</strong>
+      </div>
+      <div class="quiz-container__question">
+        Welche Bedeutung hat das Zeichen: <br />©
+      </div>
+      <hr />
+      <div class="quiz-container__question-options">
+        <div class="quiz-container__question-option">
+          <label>
+            <input
+              class="question-3"
+              type="radio"
+              name="question3"
+              data-solution="wrong"
+            />Es ist nur Verzierung.</label
+          >
+        </div>
+        <div class="quiz-container__question-option">
+          <label
+            ><input
+              class="question-3"
+              type="radio"
+              name="question3"
+              data-solution="wrong"
+            />Es weist auf den Ersteller des Werkes hin.</label
+          >
+        </div>
+        <div class="quiz-container__question-option">
+          <label>
+            <input
+              class="question-3"
+              type="radio"
+              name="question3"
+              data-solution="correct"
+            />Es weist darauf hin, dass das Werk urheberechtlich geschützt
+            ist.</label
+          >
+        </div>
+      </div>
+
+      <div class="btns">
+        <button class="btn btn-answer">Beantworten</button>
+        <button class="btn btn-next hidden">Nächste Frage</button>
+      </div>
+
+      <div class="solution-box sol-box-3 hidden">
+        <div class="solution-box__correct hidden">
+          &#10004; Richtig! Sehr gut.
+        </div>
+        <div class="solution-box__wrong hidden">&#x2717; Leider Falsch!</div>
+        <h2>Feedback:</h2>
+        <div class="feedback">
+          Das © Zeichen steht für Copyright (Urheberrecht) und weist darauf hin,
+          dass das hiermit gekennzeichnete Werk nicht ohne Erlaubnis
+          weiterverarbeitet oder in der Öffentlichkeit genutzt werden darf.
+        </div>
+      </div>
+    </section>
+    <section class="container quiz-container hidden">
+      <div class="quiz-container__question-number">
+        <strong>Frage 4:</strong>
+      </div>
+      <div class="quiz-container__question">
+        Welche Fotos, Videos oder Musik dürfen YouTuber in ihren Videos
+        benutzen?
+      </div>
+      <hr />
+      <div class="quiz-container__question-options">
+        <div class="quiz-container__question-option">
+          <label>
+            <input
+              class="question-4"
+              type="radio"
+              name="question4"
+              data-solution="wrong"
+            />
+            Sie dürfen alles nutzen.</label
+          >
+        </div>
+        <div class="quiz-container__question-option">
+          <label
+            ><input
+              class="question-4"
+              type="radio"
+              name="question4"
+              data-solution="wrong"
+            />Sie dürfen nur Inhalte nutzen, die schon auf YouTube sind.</label
+          >
+        </div>
+        <div class="quiz-container__question-option">
+          <label>
+            <input
+              class="question-4"
+              type="radio"
+              name="question4"
+              data-solution="correct"
+            />
+            Sie dürfen nur Creative Commons-Lizenz (CC) nutzen oder Inhalte für
+            die sie sich vorher eine Erlaubnis eingeholt haben</label
+          >
+        </div>
+      </div>
+
+      <div class="btns">
+        <button class="btn btn-answer">Beantworten</button>
+        <button class="btn btn-next hidden">Nächste Frage</button>
+      </div>
+
+      <div class="solution-box sol-box-4 hidden">
+        <div class="solution-box__correct hidden">
+          &#10004; Richtig! Sehr gut.
+        </div>
+        <div class="solution-box__wrong hidden">&#x2717; Leider Falsch!</div>
+        <h2>Feedback:</h2>
+        <div class="feedback">
+          Grundsätzlich können sie alles nutzen was Creative Commons-Lizenz (CC)
+          ist oder wofür sie eine Erlaubnis des Eigentümers haben. Hierbei
+          müssen aber die verschiedenen Formen des CC beachtet werden. Reaction
+          Videos oder Let’s Plays können unter Umständen auch nicht legal sein.
+        </div>
+      </div>
+    </section>
+    <section class="container result-container hidden">
+      <h1>Geschafft! Hier ist Dein Ergebnis:</h1>
+      <p>
+        Du hast <span id="correct-answers">0</span> von 4 Fragen richtig
+        beantwortet.
+      </p>
+    </section>
+  </body>
+</html>
