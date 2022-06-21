@@ -5,8 +5,8 @@
 body {
   background: linear-gradient(
     90deg,
-    rgba(221, 102, 34, 1) 0%,
-    rgba(255, 222, 0, 1) 100%
+    rgba(21, 52, 80, 1) 0%,
+    rgba(143, 188, 219, 1) 100%
   );
   display: flex;
   flex-direction: column;
@@ -59,13 +59,13 @@ label {
   text-align: center;
   border-radius: 10px;
   padding: 1rem;
-  border-top: 0.75rem solid #ff0000;
+  border-top: 0.75rem solid rgba(21, 52, 80, 1);
   margin: 1rem;
 }
 
 .btn {
   cursor: pointer;
-  background-color: #ff0000;
+  background-color: rgba(21, 52, 80, 1);
   color: white;
   border: none;
   border-radius: 5px;
@@ -110,7 +110,7 @@ label {
   height: 3rem;
   padding-left: 2rem;
   text-align: left;
-  background-color: orange;
+  background-color: rgb(135, 185, 222);
 }
 
 .quiz-container__question,
