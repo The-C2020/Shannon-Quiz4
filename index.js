@@ -1,3 +1,5 @@
+// new Comment
+
 let currentRound = 0;
 let totalRounds = document.querySelectorAll(".quiz-container").length;
 console.log(totalRounds);
